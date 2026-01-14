@@ -69,6 +69,7 @@ section h2{
 .card:hover{transform:translateY(-8px)}
 .divisi{font-size:12px;color:#777}
 .card h3{margin:10px 0}
+.card p{font-size:15px}
 .card button{
   margin-top:15px;
   width:100%;
@@ -87,7 +88,12 @@ section h2{
   padding:40px;
   text-align:center
 }
+.ebook p{
+  max-width:750px;
+  margin:auto
+}
 .ebook button{
+  margin-top:20px;
   padding:15px 35px;
   border-radius:50px;
   border:none;
@@ -116,6 +122,7 @@ footer{
 <!-- HERO -->
 <div class="hero">
   <div class="hero-box">
+    <img src="imago.png" alt="Imago Logo">
     <h1>Imago Creative Group</h1>
     <p>
       Solusi profesional untuk produk digital, E-book, desain visual,
@@ -137,10 +144,17 @@ footer{
 <div class="ebook">
 <h2>E-book Digital Imago</h2>
 <p>
-Panduan bisnis digital, branding, konten kreatif, dan marketing
-yang dirancang praktis & mudah dipahami.
+E-book berkualitas tinggi yang dirancang khusus untuk Anda serta
+disajikan secara simpel, menarik, dan penuh kesan.
 </p>
-<button onclick="order('E-book Digital Imago')">Beli E-book</button>
+
+<p style="margin-top:15px;font-weight:bold;color:#d32f2f">
+Diskon 30% sampai 1
+</p>
+
+<button onclick="order('E-book Digital Imago (Diskon 30%)')">
+Beli E-book Sekarang
+</button>
 </div>
 </section>
 
@@ -155,7 +169,7 @@ teknologi, dan strategi untuk memberikan hasil nyata dan berkelanjutan.
 </section>
 
 <footer>
-© 2026 Imago Creative Group  
+© 2026 Imago Creative Group
 <div class="social">
 Instagram: @ImagoCreative.id <br>
 TikTok: @imago.creative.group
@@ -168,12 +182,13 @@ const services=[
 {d:"Visual",n:"Edit Video",h:"Rp 5.000 / video"},
 {d:"Visual",n:"Edit Canva",h:"Rp 15.000 / desain"},
 {d:"Visual",n:"Edit ID Card",h:"Rp 2.500 / desain"},
+{d:"Visual",n:"Edit Selain di Atas",h:"Rp 2.500 – Rp 50.000"},
 {d:"Visual",n:"Edit Dokumen",h:"Rp 25.000 – Rp 35.000"},
 {d:"Visual",n:"Desain Logo",h:"Rp 50.000 – Rp 150.000"},
 {d:"Visual",n:"Desain Konten Sosial Media",h:"Rp 20.000 – Rp 50.000"},
 {d:"Visual",n:"Desain Undangan",h:"Rp 25.000 – Rp 75.000"},
 {d:"Visual",n:"Motion Graphic Sederhana",h:"Rp 50.000 – Rp 100.000"},
-{d:"Kreatif",n:"Skrip Kreatif",h:"Rp 15.000 / skrip"},
+{d:"Kreatif",n:"Membuat Skrip Kreatif",h:"Rp 15.000 / skrip"},
 {d:"Kreatif",n:"Konsep Kampanye Kreatif",h:"Rp 50.000 – Rp 100.000"},
 {d:"Kreatif",n:"Copywriting",h:"Rp 10.000 – Rp 30.000"},
 {d:"Kreatif",n:"Storyboard / Outline Konten",h:"Rp 20.000 – Rp 50.000"},
@@ -198,11 +213,14 @@ c.innerHTML+=`
 
 function order(n){
 const wa="6289508551377";
-const t=encodeURIComponent("Halo Imago Creative Group, saya ingin memesan: "+n);
+const t=encodeURIComponent(
+"Halo Imago Creative Group, saya ingin memesan: "+n
+);
 window.open(`https://wa.me/${wa}?text=${t}`,"_blank");
 }
 function scrollToLayanan(){
-document.getElementById("layanan").scrollIntoView({behavior:"smooth"});
+document.getElementById("layanan")
+.scrollIntoView({behavior:"smooth"});
 }
 </script>
 
