@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.highlight {
+  color: #00e5ff;
+}
+
+.btn-buy {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #ff3b3b, #ff0000);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  opacity: 0.9;
+}
+
+.discount {
+  margin-top: 40px;
+}
+
+.discount h2 {
+  color: red;
+}
+
+.discount .info {
+  color: #ff6b6b;
+}
+
+.admin {
+  padding: 20px;
+}
+
+#stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.btn-reset {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background: red;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
