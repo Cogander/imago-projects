@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Imago Creative Group | Digital Creative & Marketing</title>
-<meta name="description" content="Imago Creative Group adalah partner kreatif dan marketing digital profesional untuk UMKM, bisnis, dan personal brand.">
+<meta name="description" content="Imago Creative Group menyediakan layanan desain, kreatif, marketing digital, dan e-book profesional.">
 
 <style>
 :root{
@@ -70,7 +70,7 @@ nav{
 .hero h1 span{color:var(--primary)}
 .hero p{
   font-size:18px;
-  max-width:850px;
+  max-width:900px;
   margin:auto;
 }
 .cta{
@@ -122,6 +122,7 @@ section h2{
   color:#777;
 }
 .card h3{margin:12px 0}
+.card p{font-size:14px}
 .card button{
   margin-top:18px;
   width:100%;
@@ -145,6 +146,15 @@ section h2{
   margin:auto;
   font-size:18px;
   color:#e0e0e0;
+}
+.ebook button{
+  margin-top:35px;
+  padding:16px 42px;
+  border-radius:50px;
+  border:none;
+  background:var(--primary);
+  font-size:16px;
+  font-weight:900;
 }
 
 /* FOOTER */
@@ -180,7 +190,7 @@ footer strong{color:#fff}
 <div class="hero">
   <div>
     <h1>Solusi Digital <span>Profesional</span></h1>
-    <p>Partner kreatif dan marketing digital untuk UMKM, bisnis, dan personal brand.</p>
+    <p>Partner kreatif & marketing digital untuk UMKM, bisnis, dan personal brand.</p>
     <div class="cta">
       <button class="primary" onclick="scrollToId('layanan')">Lihat Layanan</button>
       <button class="secondary" onclick="scrollToId('ebook')">E-book</button>
@@ -189,7 +199,7 @@ footer strong{color:#fff}
 </div>
 
 <section id="layanan">
-<h2>Layanan Kami</h2>
+<h2>Katalog Layanan</h2>
 <div class="grid" id="services"></div>
 </section>
 
@@ -197,10 +207,11 @@ footer strong{color:#fff}
   <div class="ebook">
     <h2>E-book Digital Imago</h2>
     <p>
-      E-book digital Imago Creative Group disusun secara profesional
-      untuk membantu memahami dunia kreatif, branding, dan marketing
-      digital secara praktis dan relevan.
+      E-book digital Imago Creative Group membahas dunia kreatif,
+      branding, dan marketing digital secara praktis dan mudah dipahami.
+      Cocok untuk UMKM, bisnis, dan personal brand.
     </p>
+    <button onclick="order('E-book Digital Imago')">Beli E-book</button>
   </div>
 </section>
 
@@ -214,9 +225,24 @@ TikTok: @imago.creative.group
 const services=[
 ["Visual","Edit Foto","Rp 5.000 / foto"],
 ["Visual","Edit Video","Rp 5.000 / video"],
+["Visual","Edit Canva","Rp 15.000 / desain"],
+["Visual","Edit ID Card","Rp 2.500 / desain"],
+["Visual","Edit selain di atas","Rp 2.500 – Rp 50.000"],
+["Visual","Edit Dokumen","Rp 25.000 – Rp 35.000"],
 ["Visual","Desain Logo","Rp 50.000 – Rp 150.000"],
+["Visual","Desain Konten Sosial Media","Rp 20.000 – Rp 50.000"],
+["Visual","Desain Undangan","Rp 25.000 – Rp 75.000"],
+["Visual","Motion Graphic Sederhana","Rp 50.000 – Rp 100.000"],
+["Kreatif","Membuat Skrip Kreatif","Rp 15.000"],
+["Kreatif","Konsep Kampanye Kreatif","Rp 50.000 – Rp 100.000"],
 ["Kreatif","Copywriting","Rp 10.000 – Rp 30.000"],
-["Marketing","Strategi Marketing","Rp 50.000 – Rp 100.000"]
+["Kreatif","Storyboard / Outline Konten","Rp 20.000 – Rp 50.000"],
+["Kreatif","Ide Konten Bulanan","Rp 100.000"],
+["Marketing","Strategi Marketing Dasar","Rp 50.000 – Rp 100.000"],
+["Marketing","Rencana Promosi","Rp 75.000 – Rp 150.000"],
+["Marketing","Riset Target Audience","Rp 50.000 – Rp 100.000"],
+["Marketing","Social Media Management","Rp 100.000 – Rp 300.000"],
+["Marketing","Konsultasi Marketing","Rp 75.000"]
 ];
 
 const box=document.getElementById("services");
